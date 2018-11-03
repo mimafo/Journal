@@ -12,6 +12,8 @@
 		27684E1F218E153200E92F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27684E1E218E153200E92F76 /* Assets.xcassets */; };
 		27684E22218E153200E92F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27684E20218E153200E92F76 /* LaunchScreen.storyboard */; };
 		27684E2E218E1AA200E92F76 /* CreateEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27684E2D218E1AA200E92F76 /* CreateEntry.storyboard */; };
+		27684E30218E1E0B00E92F76 /* CreateEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E2F218E1E0B00E92F76 /* CreateEntryViewController.swift */; };
+		27684E32218E1EA500E92F76 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E31218E1EA500E92F76 /* ColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		27684E21218E153200E92F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27684E23218E153200E92F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27684E2D218E1AA200E92F76 /* CreateEntry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEntry.storyboard; sourceTree = "<group>"; };
+		27684E2F218E1E0B00E92F76 /* CreateEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryViewController.swift; sourceTree = "<group>"; };
+		27684E31218E1EA500E92F76 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			children = (
 				27684E1B218E152E00E92F76 /* Main.storyboard */,
 				27684E2D218E1AA200E92F76 /* CreateEntry.storyboard */,
+				27684E31218E1EA500E92F76 /* ColorView.swift */,
+				27684E2F218E1E0B00E92F76 /* CreateEntryViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27684E32218E1EA500E92F76 /* ColorView.swift in Sources */,
 				27684E18218E152E00E92F76 /* AppDelegate.swift in Sources */,
+				27684E30218E1E0B00E92F76 /* CreateEntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
