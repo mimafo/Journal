@@ -64,11 +64,17 @@
                                 <rect key="frame" x="148" y="516" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add a Tag"/>
+                                <connections>
+                                    <action selector="addTag:" destination="6D6-xP-K5N" eventType="touchUpInside" id="1XR-sh-aXJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC1-6N-2j7">
                                 <rect key="frame" x="148" y="554" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="6D6-xP-K5N" eventType="touchUpInside" id="fDH-ZL-8nm"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x9r-b2-oiA">
                                 <rect key="frame" x="16" y="64" width="343" height="30"/>
@@ -82,6 +88,11 @@
                         <viewLayoutGuide key="safeArea" id="MrG-JO-Qe3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create an Entry" id="msb-kN-l6f"/>
+                    <connections>
+                        <outlet property="addTag" destination="ea7-NT-OoB" id="OHK-Ps-4LI"/>
+                        <outlet property="bodyTextView" destination="Boa-Ni-ql4" id="h95-TE-oPK"/>
+                        <outlet property="titleTextField" destination="x9r-b2-oiA" id="353-4j-hyD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbK-cp-5tR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
