@@ -16,6 +16,7 @@
 		27684E32218E1EA500E92F76 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E31218E1EA500E92F76 /* ColorView.swift */; };
 		27684E34218F3E9F00E92F76 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E33218F3E9F00E92F76 /* Entry.swift */; };
 		27684E37218F404E00E92F76 /* EntryConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E36218F404E00E92F76 /* EntryConroller.swift */; };
+		27684E39218F7BDD00E92F76 /* KeyboardScrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		27684E31218E1EA500E92F76 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		27684E33218F3E9F00E92F76 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		27684E36218F404E00E92F76 /* EntryConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryConroller.swift; sourceTree = "<group>"; };
+		27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardScrollable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				27684E2D218E1AA200E92F76 /* CreateEntry.storyboard */,
 				27684E31218E1EA500E92F76 /* ColorView.swift */,
 				27684E2F218E1E0B00E92F76 /* CreateEntryViewController.swift */,
+				27684E3A218F8C2800E92F76 /* Helpers */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -98,6 +101,14 @@
 				27684E36218F404E00E92F76 /* EntryConroller.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		27684E3A218F8C2800E92F76 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27684E34218F3E9F00E92F76 /* Entry.swift in Sources */,
+				27684E39218F7BDD00E92F76 /* KeyboardScrollable.swift in Sources */,
 				27684E32218E1EA500E92F76 /* ColorView.swift in Sources */,
 				27684E37218F404E00E92F76 /* EntryConroller.swift in Sources */,
 				27684E18218E152E00E92F76 /* AppDelegate.swift in Sources */,

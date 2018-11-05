@@ -17,6 +17,13 @@ class CreateEntryViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var bodyTextView: UITextView!
     @IBOutlet weak var addTag: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    //View Controller Methods
+    override func viewDidLoad() {
+        registerForKeyboardNotifications()
+        
+    }
     
     //Actions
     @IBAction func addTag(_ sender: UIButton) {
@@ -65,5 +72,19 @@ extension CreateEntryViewController {
         alertController.addAction(addAction)
         present(alertController, animated: true, completion: nil)
         
+    }
+}
+
+extension CreateEntryViewController: KeyboardScrollable {
+    func keyboardDidShow(_ notification: Notification) {
+        keyboardWasShown(notification)
+    }
+    
+    func keyboardWillHide(_ notification: Notification) {
+        keyboardWillBeHidden(notification)
+    }
+    
+    func getScrollView() -> UIScrollView? {
+        return scrollView
     }
 }
