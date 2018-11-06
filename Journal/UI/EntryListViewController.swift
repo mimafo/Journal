@@ -16,6 +16,7 @@ class EntryListViewController: UIViewController {
     //UIViewController methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
     }
     
 }

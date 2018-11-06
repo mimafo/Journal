@@ -18,6 +18,22 @@ class EntryController {
         return []
     }
     
+    //Initializer
+    init() {
+        entries = [Entry(title: "First Entry", body: "Hello World, this is my first entry", tag: "Rock Star", color: .red),
+                   Entry(title: "Second Entry", body: "This is another entry, blah, blah, blah", tag: "Mike Folcher", color: .blue),
+                   Entry(title: "Another Entry", body: "Testing, testing: one, two, three", tag: "Rock Star", color: .green),
+                   Entry(title: "My Stuff", body: "Hello again, how are you doing today?", tag: "Special Info", color: .green),
+                   Entry(title: "More Stuff", body: "This is getting really boring.  Hello out there!", tag: "Tag Me", color: .black),
+                   Entry(title: "Testing", body: "Hello World, is there anybody in there?  Just nod if you can hear me", tag: "You are it", color: .white),
+                   Entry(title: "Another Test", body: "Getting closer to being done.  Almost there...", tag: "Tag Me", color: .red),
+                   Entry(title: "Some More Data", body: "Testing again, I am here!.!.!.!:)", tag: "Testing", color: .blue),
+                   Entry(title: "Almost Done", body: "Welcome to the thunderdome~!", tag: "Hello", color: .green),
+                   Entry(title: "Last One", body: "Goodbye World, this is my last entry", tag: "Rock Star", color: .red)
+        ]
+        
+    }
+    
     // CRUD operations
     func CreateEntry(withTitle title: String, body: String, tag: String? = nil, color: UIColor) {
         let entry = Entry(title: title, body: body, tag: tag ?? untagged, color: color)

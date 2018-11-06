@@ -15,7 +15,7 @@
 		27684E30218E1E0B00E92F76 /* CreateEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E2F218E1E0B00E92F76 /* CreateEntryViewController.swift */; };
 		27684E32218E1EA500E92F76 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E31218E1EA500E92F76 /* ColorView.swift */; };
 		27684E34218F3E9F00E92F76 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E33218F3E9F00E92F76 /* Entry.swift */; };
-		27684E37218F404E00E92F76 /* EntryConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E36218F404E00E92F76 /* EntryConroller.swift */; };
+		27684E37218F404E00E92F76 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E36218F404E00E92F76 /* EntryController.swift */; };
 		27684E39218F7BDD00E92F76 /* KeyboardScrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */; };
 		27684E3C219114C100E92F76 /* EntryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27684E3B219114C100E92F76 /* EntryList.storyboard */; };
 		27684E4021911C8300E92F76 /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E3F21911C8300E92F76 /* EntryListViewController.swift */; };
@@ -32,7 +32,7 @@
 		27684E2F218E1E0B00E92F76 /* CreateEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryViewController.swift; sourceTree = "<group>"; };
 		27684E31218E1EA500E92F76 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		27684E33218F3E9F00E92F76 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		27684E36218F404E00E92F76 /* EntryConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryConroller.swift; sourceTree = "<group>"; };
+		27684E36218F404E00E92F76 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardScrollable.swift; sourceTree = "<group>"; };
 		27684E3B219114C100E92F76 /* EntryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryList.storyboard; sourceTree = "<group>"; };
 		27684E3F21911C8300E92F76 /* EntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				27684E33218F3E9F00E92F76 /* Entry.swift */,
-				27684E36218F404E00E92F76 /* EntryConroller.swift */,
+				27684E36218F404E00E92F76 /* EntryController.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 				27684E34218F3E9F00E92F76 /* Entry.swift in Sources */,
 				27684E39218F7BDD00E92F76 /* KeyboardScrollable.swift in Sources */,
 				27684E32218E1EA500E92F76 /* ColorView.swift in Sources */,
-				27684E37218F404E00E92F76 /* EntryConroller.swift in Sources */,
+				27684E37218F404E00E92F76 /* EntryController.swift in Sources */,
 				27684E18218E152E00E92F76 /* AppDelegate.swift in Sources */,
 				27684E4021911C8300E92F76 /* EntryListViewController.swift in Sources */,
 				27684E30218E1E0B00E92F76 /* CreateEntryViewController.swift in Sources */,
