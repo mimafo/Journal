@@ -17,6 +17,8 @@
 		27684E34218F3E9F00E92F76 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E33218F3E9F00E92F76 /* Entry.swift */; };
 		27684E37218F404E00E92F76 /* EntryConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E36218F404E00E92F76 /* EntryConroller.swift */; };
 		27684E39218F7BDD00E92F76 /* KeyboardScrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */; };
+		27684E3C219114C100E92F76 /* EntryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27684E3B219114C100E92F76 /* EntryList.storyboard */; };
+		27684E4021911C8300E92F76 /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E3F21911C8300E92F76 /* EntryListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		27684E33218F3E9F00E92F76 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		27684E36218F404E00E92F76 /* EntryConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryConroller.swift; sourceTree = "<group>"; };
 		27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardScrollable.swift; sourceTree = "<group>"; };
+		27684E3B219114C100E92F76 /* EntryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryList.storyboard; sourceTree = "<group>"; };
+		27684E3F21911C8300E92F76 /* EntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				27684E1B218E152E00E92F76 /* Main.storyboard */,
+				27684E3B219114C100E92F76 /* EntryList.storyboard */,
 				27684E2D218E1AA200E92F76 /* CreateEntry.storyboard */,
 				27684E31218E1EA500E92F76 /* ColorView.swift */,
 				27684E2F218E1E0B00E92F76 /* CreateEntryViewController.swift */,
+				27684E3F21911C8300E92F76 /* EntryListViewController.swift */,
 				27684E3A218F8C2800E92F76 /* Helpers */,
 			);
 			path = UI;
@@ -171,6 +177,7 @@
 			files = (
 				27684E22218E153200E92F76 /* LaunchScreen.storyboard in Resources */,
 				27684E1F218E153200E92F76 /* Assets.xcassets in Resources */,
+				27684E3C219114C100E92F76 /* EntryList.storyboard in Resources */,
 				27684E1D218E152E00E92F76 /* Main.storyboard in Resources */,
 				27684E2E218E1AA200E92F76 /* CreateEntry.storyboard in Resources */,
 			);
@@ -188,6 +195,7 @@
 				27684E32218E1EA500E92F76 /* ColorView.swift in Sources */,
 				27684E37218F404E00E92F76 /* EntryConroller.swift in Sources */,
 				27684E18218E152E00E92F76 /* AppDelegate.swift in Sources */,
+				27684E4021911C8300E92F76 /* EntryListViewController.swift in Sources */,
 				27684E30218E1E0B00E92F76 /* CreateEntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

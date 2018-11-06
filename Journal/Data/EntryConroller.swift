@@ -26,8 +26,8 @@ class EntryController {
     }
     
     func getEntry(at indexPath: IndexPath) -> Entry {
-        let tag = tags[indexPath.section]
-        let entries = getEntries(with: tag)
+        //let tag = tags[indexPath.section]
+        //let entries = getEntries(with: tag)
         return entries[indexPath.row]
     }
     
