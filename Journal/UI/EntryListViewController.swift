@@ -17,13 +17,24 @@ class EntryListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
 }
 
 extension EntryListViewController : UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return EntryController.shared.tags.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return EntryController.shared.tags[section]
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return EntryController.shared.entries.count
+        let tag = EntryController.shared.tags[section]
+        return EntryController.shared.getEntries(with: tag).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,5 +43,15 @@ extension EntryListViewController : UITableViewDataSource {
         cell.textLabel?.text = entry.title
         cell.detailTextLabel?.text = entry.body
         return cell
+    }
+}
+
+extension EntryListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }

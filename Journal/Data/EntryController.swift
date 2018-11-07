@@ -15,7 +15,11 @@ class EntryController {
     
     var entries: [Entry] = []
     var tags: [String] {
-        return []
+        var set = Set<String>()
+        entries.forEach {
+            set.update(with: $0.tag.capitalized)
+        }
+        return set.sorted()
     }
     
     //Initializer
@@ -25,7 +29,7 @@ class EntryController {
                    Entry(title: "Another Entry", body: "Testing, testing: one, two, three", tag: "Rock Star", color: .green),
                    Entry(title: "My Stuff", body: "Hello again, how are you doing today?", tag: "Special Info", color: .green),
                    Entry(title: "More Stuff", body: "This is getting really boring.  Hello out there!", tag: "Tag Me", color: .black),
-                   Entry(title: "Testing", body: "Hello World, is there anybody in there?  Just nod if you can hear me", tag: "You are it", color: .white),
+                   Entry(title: "Testing", body: "Hello World, is there anybody in there?  Just nod if you can hear me.  Is there any one at home?  Relax, I need some information first.  Just some basic facts, can you show me where it hurt?", tag: "You are it", color: .white),
                    Entry(title: "Another Test", body: "Getting closer to being done.  Almost there...", tag: "Tag Me", color: .red),
                    Entry(title: "Some More Data", body: "Testing again, I am here!.!.!.!:)", tag: "Testing", color: .blue),
                    Entry(title: "Almost Done", body: "Welcome to the thunderdome~!", tag: "Hello", color: .green),
@@ -42,8 +46,8 @@ class EntryController {
     }
     
     func getEntry(at indexPath: IndexPath) -> Entry {
-        //let tag = tags[indexPath.section]
-        //let entries = getEntries(with: tag)
+        let tag = tags[indexPath.section]
+        let entries = getEntries(with: tag)
         return entries[indexPath.row]
     }
     
@@ -64,8 +68,7 @@ class EntryController {
         //Save to disk
     }
     
-    // Internal helpers
-    private func getEntries(with tag: String) -> [Entry] {
-        return entries.filter { $0.tag == tag }
+     func getEntries(with tag: String) -> [Entry] {
+        return entries.filter { $0.tag.lowercased() == tag.lowercased() }
     }
 }
