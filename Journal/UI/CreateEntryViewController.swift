@@ -30,6 +30,10 @@ class CreateEntryViewController: UIViewController {
         presentAlertController()
     }
     
+    @IBAction func exitPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func save(_ sender: UIButton) {
         guard let title = titleTextField.text, !title.isEmpty, let body = bodyTextView.text, !body.isEmpty else { return }
         

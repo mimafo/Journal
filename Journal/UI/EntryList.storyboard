@@ -53,7 +53,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZNI-Hj-gId"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Entry List" id="qL8-d6-HYq"/>
+                    <navigationItem key="navigationItem" title="Entry List" id="qL8-d6-HYq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5j6-4M-OVe">
+                            <connections>
+                                <segue destination="6uW-fK-AVc" kind="presentation" id="dXW-Md-Zv0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="g0n-Ra-Rws" id="e2Q-b4-yXC"/>
                     </connections>
@@ -61,6 +67,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0d8-RT-iSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="624.79999999999995" y="151.57421289355324"/>
+        </scene>
+        <!--CreateEntry-->
+        <scene sceneID="PUr-hC-zWq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateEntry" id="6uW-fK-AVc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5K6-tb-FKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321" y="151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O5B-5n-4vX">
