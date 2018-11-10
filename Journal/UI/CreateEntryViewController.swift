@@ -19,10 +19,17 @@ class CreateEntryViewController: UIViewController {
     @IBOutlet weak var addTag: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    //Properties
+    var entry: Entry?
+    
     //View Controller Methods
     override func viewDidLoad() {
         registerForKeyboardNotifications()
-        
+        if let entry = entry {
+            print("\(entry)")
+        } else {
+            print("Entry is empty")
+        }
     }
     
     //Actions
@@ -49,7 +56,11 @@ class CreateEntryViewController: UIViewController {
         titleTextField.text = ""
         bodyTextView.text = ""
         addTag.setTitle(AddTagText, for: .normal)
+        
+        //Resign the responders and pop this ViewController
         resignResponders()
+        navigationController?.popViewController(animated: true)
+        
     }
     
     //Private helper functions

@@ -45,6 +45,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6uW-fK-AVc" kind="show" identifier="EditEntrySegue" id="hbF-22-hLP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -56,7 +59,7 @@
                     <navigationItem key="navigationItem" title="Entry List" id="qL8-d6-HYq">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5j6-4M-OVe">
                             <connections>
-                                <segue destination="6uW-fK-AVc" kind="presentation" id="dXW-Md-Zv0"/>
+                                <segue destination="6uW-fK-AVc" kind="presentation" identifier="" id="dXW-Md-Zv0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -95,4 +98,7 @@
             <point key="canvasLocation" x="-356" y="152"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hbF-22-hLP"/>
+    </inferredMetricsTieBreakers>
 </document>

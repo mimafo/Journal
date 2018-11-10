@@ -55,3 +55,13 @@ extension EntryListViewController: UITableViewDelegate {
         return UITableView.automaticDimension
     }
 }
+
+extension EntryListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EditEntrySegue" {
+            guard let vc = segue.destination as? CreateEntryViewController,
+                  let indexPath = tableView.indexPathForSelectedRow else { return }
+            vc.entry = EntryController.shared.getEntry(at: indexPath)
+        }
+    }
+}
