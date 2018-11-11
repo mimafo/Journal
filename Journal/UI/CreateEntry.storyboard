@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6D6-xP-K5N">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController title="Create an Entry" id="6D6-xP-K5N" customClass="CreateEntryViewController" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fxi-Cq-EPB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-sp-Yjn">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b4-da-yac" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GeE-Xm-3XK">
-                                                <rect key="frame" x="12" y="20" width="390" height="632"/>
+                                                <rect key="frame" x="12" y="20" width="390" height="734"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x9r-b2-oiA">
                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="24"/>
@@ -36,73 +36,68 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a body..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Boa-Ni-ql4">
-                                                        <rect key="frame" x="0.0" y="24" width="390" height="464"/>
+                                                        <rect key="frame" x="0.0" y="24" width="390" height="566"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GYn-aV-3iD">
-                                                        <rect key="frame" x="0.0" y="488" width="390" height="56"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GYn-aV-3iD">
+                                                        <rect key="frame" x="0.0" y="590" width="390" height="56"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lay-5s-T6y" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="3" width="49" height="50"/>
+                                                                <rect key="frame" x="0.0" y="3" width="52" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="Mj6-AV-p0Z"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="Mj6-AV-p0Z"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-jL-YnH" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="57" y="3" width="49" height="50"/>
+                                                                <rect key="frame" x="56" y="3" width="52.333333333333343" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="aZZ-xe-cER"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="aZZ-xe-cER"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxe-PI-zbg" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="114" y="3" width="49" height="50"/>
+                                                                <rect key="frame" x="112.33333333333331" y="3" width="52" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="q4A-TS-7Lu"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="q4A-TS-7Lu"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8B-XI-hOj" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="171" y="3" width="49" height="50"/>
+                                                                <rect key="frame" x="168.33333333333334" y="3" width="52.333333333333343" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="jPg-Ax-pOS"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="jPg-Ax-pOS"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBo-7s-22o" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="228" y="3" width="49" height="50"/>
+                                                                <rect key="frame" x="224.66666666666666" y="3" width="51.999999999999972" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="Sol-aU-qnK"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="Sol-aU-qnK"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-Op-HoM" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="285" y="3" width="49" height="50"/>
+                                                                <rect key="frame" x="280.66666666666669" y="3" width="52.333333333333314" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="W7t-7D-8cV"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="W7t-7D-8cV"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-3H-D5u" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="342" y="3" width="48" height="50"/>
+                                                                <rect key="frame" x="337" y="3" width="53" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="9JU-d9-V6w"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="9JU-d9-V6w"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.15674037399999999" green="0.52409561819999995" blue="0.004073423546" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="tintColor" red="0.15674037399999999" green="0.52409561819999995" blue="0.004073423546" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="56" id="Ntc-Vy-eBa"/>
-                                                        </constraints>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea7-NT-OoB">
-                                                        <rect key="frame" x="160.66666666666666" y="544" width="69" height="44"/>
+                                                        <rect key="frame" x="160.66666666666666" y="646" width="69" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="Uga-vp-0Oo"/>
                                                         </constraints>
@@ -112,7 +107,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC1-6N-2j7">
-                                                        <rect key="frame" x="178" y="588" width="34" height="44"/>
+                                                        <rect key="frame" x="178" y="690" width="34" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="u8w-Lx-zOS"/>
                                                         </constraints>
@@ -127,7 +122,9 @@
                                                     <constraint firstItem="x9r-b2-oiA" firstAttribute="leading" secondItem="GeE-Xm-3XK" secondAttribute="leading" id="3Gk-1k-84F"/>
                                                     <constraint firstItem="Boa-Ni-ql4" firstAttribute="leading" secondItem="GeE-Xm-3XK" secondAttribute="leading" id="BEl-w3-qvV"/>
                                                     <constraint firstItem="ea7-NT-OoB" firstAttribute="top" secondItem="GYn-aV-3iD" secondAttribute="bottom" id="E2a-Bw-lMC"/>
+                                                    <constraint firstItem="GYn-aV-3iD" firstAttribute="leading" secondItem="GeE-Xm-3XK" secondAttribute="leading" id="FtE-BS-R7Z"/>
                                                     <constraint firstAttribute="trailing" secondItem="Boa-Ni-ql4" secondAttribute="trailing" id="QlM-1n-yw7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GYn-aV-3iD" secondAttribute="trailing" id="gRT-WU-Sab"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
@@ -183,7 +180,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yba-iP-1Ww" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hhj-x0-CkA">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
