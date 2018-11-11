@@ -44,10 +44,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="T23-4h-Hue" firstAttribute="top" secondItem="b42-Tk-Zk2" secondAttribute="top" id="1Ex-95-3Wu"/>
                             <constraint firstItem="T23-4h-Hue" firstAttribute="leading" secondItem="b42-Tk-Zk2" secondAttribute="leading" id="BW9-BG-d4D"/>
                             <constraint firstItem="T23-4h-Hue" firstAttribute="bottom" secondItem="gOV-WZ-OhB" secondAttribute="bottom" id="Eu7-Lg-DCM"/>
+                            <constraint firstItem="T23-4h-Hue" firstAttribute="bottom" secondItem="gOV-WZ-OhB" secondAttribute="bottom" id="Npe-Mg-gfy"/>
                             <constraint firstItem="T23-4h-Hue" firstAttribute="top" secondItem="b42-Tk-Zk2" secondAttribute="top" id="S3U-lu-ulB"/>
+                            <constraint firstItem="T23-4h-Hue" firstAttribute="leading" secondItem="gOV-WZ-OhB" secondAttribute="leading" id="Uis-wZ-TUG"/>
                             <constraint firstAttribute="trailing" secondItem="T23-4h-Hue" secondAttribute="trailing" id="d9b-hG-KZI"/>
+                            <constraint firstItem="T23-4h-Hue" firstAttribute="trailing" secondItem="gOV-WZ-OhB" secondAttribute="trailing" id="gbc-e6-hJY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gOV-WZ-OhB"/>
                     </view>
@@ -83,9 +87,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NgO-hF-Rmu" firstAttribute="top" secondItem="15U-AD-acN" secondAttribute="top" id="2Yu-y8-STf"/>
+                            <constraint firstItem="NgO-hF-Rmu" firstAttribute="trailing" secondItem="QJ3-GO-djk" secondAttribute="trailing" id="Hkf-jC-MOP"/>
+                            <constraint firstItem="NgO-hF-Rmu" firstAttribute="top" secondItem="15U-AD-acN" secondAttribute="top" id="P8N-87-G2h"/>
+                            <constraint firstItem="NgO-hF-Rmu" firstAttribute="leading" secondItem="QJ3-GO-djk" secondAttribute="leading" id="bKa-Pm-JZn"/>
                             <constraint firstAttribute="trailing" secondItem="NgO-hF-Rmu" secondAttribute="trailing" id="hE6-rN-CHT"/>
                             <constraint firstItem="NgO-hF-Rmu" firstAttribute="bottom" secondItem="QJ3-GO-djk" secondAttribute="bottom" id="idF-sK-AQq"/>
                             <constraint firstItem="NgO-hF-Rmu" firstAttribute="leading" secondItem="15U-AD-acN" secondAttribute="leading" id="joY-lY-sHp"/>
+                            <constraint firstItem="NgO-hF-Rmu" firstAttribute="bottom" secondItem="QJ3-GO-djk" secondAttribute="bottom" id="uRJ-ph-H5c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QJ3-GO-djk"/>
                     </view>
