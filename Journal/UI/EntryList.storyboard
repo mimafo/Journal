@@ -21,30 +21,49 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EntryCell" textLabel="LV0-tZ-aA5" detailTextLabel="vki-3S-7Ng" style="IBUITableViewCellStyleSubtitle" id="bue-LT-4jJ">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EntryCell" rowHeight="80" id="bue-LT-4jJ" customClass="EntryCell" customModule="Journal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bue-LT-4jJ" id="VqV-RW-ruf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LV0-tZ-aA5">
-                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tj-Ym-wgq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="10" height="79.5"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="10" id="1lS-Oy-CuT"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an example of the body text for the entry...." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgH-oR-HkG">
+                                                    <rect key="frame" x="20" y="34.5" width="314" height="34.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vki-3S-7Ng">
-                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="This is an Entry Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdC-Zc-m5Z">
+                                                    <rect key="frame" x="20" y="11" width="162.5" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="3tj-Ym-wgq" secondAttribute="bottom" id="1Fu-sj-Rqq"/>
+                                                <constraint firstItem="3tj-Ym-wgq" firstAttribute="leading" secondItem="VqV-RW-ruf" secondAttribute="leading" id="1s5-pR-tfc"/>
+                                                <constraint firstItem="JdC-Zc-m5Z" firstAttribute="top" secondItem="VqV-RW-ruf" secondAttribute="topMargin" id="5kj-ke-eRR"/>
+                                                <constraint firstItem="hgH-oR-HkG" firstAttribute="top" secondItem="JdC-Zc-m5Z" secondAttribute="bottom" constant="2" id="MZ6-7Q-bEc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hgH-oR-HkG" secondAttribute="trailing" id="WEZ-93-Gbr"/>
+                                                <constraint firstItem="JdC-Zc-m5Z" firstAttribute="leading" secondItem="3tj-Ym-wgq" secondAttribute="trailing" constant="10" id="YmL-bv-DII"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="hgH-oR-HkG" secondAttribute="bottom" id="Yqe-pF-DEi"/>
+                                                <constraint firstItem="3tj-Ym-wgq" firstAttribute="top" secondItem="VqV-RW-ruf" secondAttribute="top" id="ZnD-sI-dj5"/>
+                                                <constraint firstItem="hgH-oR-HkG" firstAttribute="leading" secondItem="3tj-Ym-wgq" secondAttribute="trailing" constant="10" id="znt-O3-jcb"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="bodyLabel" destination="hgH-oR-HkG" id="8Ne-yx-kVt"/>
+                                            <outlet property="colorView" destination="3tj-Ym-wgq" id="eVD-p9-51Z"/>
+                                            <outlet property="titleLabel" destination="JdC-Zc-m5Z" id="sLl-N4-7ik"/>
                                             <segue destination="6uW-fK-AVc" kind="show" identifier="EditEntrySegue" id="hbF-22-hLP"/>
                                         </connections>
                                     </tableViewCell>

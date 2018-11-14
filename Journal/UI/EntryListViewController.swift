@@ -38,10 +38,9 @@ extension EntryListViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EntryCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EntryCell", for: indexPath) as? EntryCell else { return UITableViewCell() }
         let entry = EntryController.shared.getEntry(at: indexPath)
-        cell.textLabel?.text = entry.title
-        cell.detailTextLabel?.text = entry.body
+        cell.updateCell(with: entry)
         return cell
     }
 }

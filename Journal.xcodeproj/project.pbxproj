@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27099A81219BBD84006575D7 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27099A80219BBD84006575D7 /* EntryCell.swift */; };
 		27684E18218E152E00E92F76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E17218E152E00E92F76 /* AppDelegate.swift */; };
 		27684E1D218E152E00E92F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27684E1B218E152E00E92F76 /* Main.storyboard */; };
 		27684E1F218E153200E92F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27684E1E218E153200E92F76 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27099A80219BBD84006575D7 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		27684E14218E152E00E92F76 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27684E17218E152E00E92F76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27684E1C218E152E00E92F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,10 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				27684E17218E152E00E92F76 /* AppDelegate.swift */,
+				27BFBC99219A836B000A986E /* CustomColors.swift */,
 				27684E35218F403C00E92F76 /* Data */,
 				27684E2A218E18DA00E92F76 /* UI */,
 				27684E29218E159300E92F76 /* Resources */,
-				27BFBC99219A836B000A986E /* CustomColors.swift */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -98,6 +100,7 @@
 				27684E31218E1EA500E92F76 /* ColorView.swift */,
 				27684E2F218E1E0B00E92F76 /* CreateEntryViewController.swift */,
 				27684E3F21911C8300E92F76 /* EntryListViewController.swift */,
+				27099A80219BBD84006575D7 /* EntryCell.swift */,
 				27684E3A218F8C2800E92F76 /* Helpers */,
 			);
 			path = UI;
@@ -197,6 +200,7 @@
 				27684E39218F7BDD00E92F76 /* KeyboardScrollable.swift in Sources */,
 				27BFBC9A219A836B000A986E /* CustomColors.swift in Sources */,
 				27684E32218E1EA500E92F76 /* ColorView.swift in Sources */,
+				27099A81219BBD84006575D7 /* EntryCell.swift in Sources */,
 				27684E37218F404E00E92F76 /* EntryController.swift in Sources */,
 				27684E18218E152E00E92F76 /* AppDelegate.swift in Sources */,
 				27684E4021911C8300E92F76 /* EntryListViewController.swift in Sources */,
