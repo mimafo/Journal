@@ -179,6 +179,13 @@
                         <outlet property="bodyTextView" destination="Boa-Ni-ql4" id="h95-TE-oPK"/>
                         <outlet property="scrollView" destination="xBZ-sp-Yjn" id="9hQ-aK-zHw"/>
                         <outlet property="titleTextField" destination="x9r-b2-oiA" id="353-4j-hyD"/>
+                        <outletCollection property="colorViews" destination="lay-5s-T6y" collectionClass="NSMutableArray" id="1A0-5k-ozE"/>
+                        <outletCollection property="colorViews" destination="Uza-jL-YnH" collectionClass="NSMutableArray" id="MhI-oI-WH6"/>
+                        <outletCollection property="colorViews" destination="wxe-PI-zbg" collectionClass="NSMutableArray" id="92Q-MH-NSa"/>
+                        <outletCollection property="colorViews" destination="k8B-XI-hOj" collectionClass="NSMutableArray" id="p7e-Gh-HXg"/>
+                        <outletCollection property="colorViews" destination="FBo-7s-22o" collectionClass="NSMutableArray" id="biq-SA-kvO"/>
+                        <outletCollection property="colorViews" destination="6E3-Op-HoM" collectionClass="NSMutableArray" id="s8F-BS-Kct"/>
+                        <outletCollection property="colorViews" destination="ffY-3H-D5u" collectionClass="NSMutableArray" id="aaq-8R-46k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbK-cp-5tR" userLabel="First Responder" sceneMemberID="firstResponder"/>

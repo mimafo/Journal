@@ -19,6 +19,7 @@
 		27684E39218F7BDD00E92F76 /* KeyboardScrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */; };
 		27684E3C219114C100E92F76 /* EntryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27684E3B219114C100E92F76 /* EntryList.storyboard */; };
 		27684E4021911C8300E92F76 /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27684E3F21911C8300E92F76 /* EntryListViewController.swift */; };
+		27BFBC9A219A836B000A986E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BFBC99219A836B000A986E /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		27684E38218F7BDD00E92F76 /* KeyboardScrollable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardScrollable.swift; sourceTree = "<group>"; };
 		27684E3B219114C100E92F76 /* EntryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryList.storyboard; sourceTree = "<group>"; };
 		27684E3F21911C8300E92F76 /* EntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
+		27BFBC99219A836B000A986E /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				27684E35218F403C00E92F76 /* Data */,
 				27684E2A218E18DA00E92F76 /* UI */,
 				27684E29218E159300E92F76 /* Resources */,
+				27BFBC99219A836B000A986E /* CustomColors.swift */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				27684E34218F3E9F00E92F76 /* Entry.swift in Sources */,
 				27684E39218F7BDD00E92F76 /* KeyboardScrollable.swift in Sources */,
+				27BFBC9A219A836B000A986E /* CustomColors.swift in Sources */,
 				27684E32218E1EA500E92F76 /* ColorView.swift in Sources */,
 				27684E37218F404E00E92F76 /* EntryController.swift in Sources */,
 				27684E18218E152E00E92F76 /* AppDelegate.swift in Sources */,

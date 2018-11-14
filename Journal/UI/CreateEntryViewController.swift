@@ -18,18 +18,26 @@ class CreateEntryViewController: UIViewController {
     @IBOutlet weak var bodyTextView: UITextView!
     @IBOutlet weak var addTag: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet var colorViews: [ColorView]!
+    
     
     //Properties
     var entry: Entry?
+    var color: UIColor = CustomColors.getColor(color: CustomColors.colorValue.red)
     
     //View Controller Methods
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         registerForKeyboardNotifications()
         if let entry = entry {
             print("\(entry)")
         } else {
             print("Entry is empty")
         }
+        
+        colorViews[0].toggle()
+        colorViews.forEach { $0.delegate = self}
     }
     
     //Actions
@@ -102,4 +110,18 @@ extension CreateEntryViewController: KeyboardScrollable {
     func getScrollView() -> UIScrollView? {
         return scrollView
     }
+}
+
+extension CreateEntryViewController: ColorViewDelegate {
+    func selectColor(color: UIColor) {
+        self.color = color
+        //untoggle the previously selected color
+        for view in colorViews {
+            let colorValue = CustomColors.getColorValue(color: color)
+            if view.tag != colorValue.rawValue && view.isSelected {
+                view.toggle()
+            }
+        }
+    }
+    
 }

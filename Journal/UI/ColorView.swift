@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ColorViewDelegate: class {
-    func selectColor(customColor: UIColor)
+    func selectColor(color: UIColor)
 }
 
 class ColorView: UIView {
@@ -48,24 +48,10 @@ class ColorView: UIView {
     }
     
     func setupBackground() -> UIColor {
-        switch tag {
-        case 1:
-            return .red
-        case 2:
-            return .orange
-        case 3:
-            return .yellow
-        case 4:
-            return .green
-        case 5:
-            return .blue
-        case 6:
-            return .purple
-        case 7:
-            return .gray
-        default:
-            return .white
+        if let customColor = CustomColors.colorValue.init(rawValue: tag) {
+            return CustomColors.getColor(color: customColor)
         }
+        return UIColor.white
     }
     
     func setupTap() {
@@ -74,7 +60,7 @@ class ColorView: UIView {
     }
     
     @objc func selectColor() {
-        delegate?.selectColor(customColor: setupBackground())
+        delegate?.selectColor(color: setupBackground())
         toggle()
     }
     
