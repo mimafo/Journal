@@ -51,8 +51,6 @@ class EntryController {
         return entries[indexPath.row]
     }
     
-
-    
     func updateEntry(_ entry: Entry, with title: String, body: String, tag: String? = nil, color: UIColor) {
         guard let index = entries.firstIndex(of: entry) else { return }
         entries[index].title = title
@@ -64,6 +62,7 @@ class EntryController {
     
     func deleteEntry(_ entry: Entry) {
         guard let index = entries.firstIndex(of: entry) else { return }
+        print("Index: \(index)")
         entries.remove(at: index)
         //Save to disk
     }

@@ -43,6 +43,14 @@ extension EntryListViewController : UITableViewDataSource {
         cell.updateCell(with: entry)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let entry = EntryController.shared.getEntry(at: indexPath)
+            EntryController.shared.deleteEntry(entry)
+            tableView.reloadData()
+        }
+    }
 }
 
 extension EntryListViewController: UITableViewDelegate {

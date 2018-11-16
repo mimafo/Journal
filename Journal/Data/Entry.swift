@@ -35,9 +35,11 @@ struct Entry {
 
 extension Entry: Equatable {
     static func ==(left: Entry, right: Entry) -> Bool {
-        return left.title == right.body
+        print("Left: \(left)")
+        print("Right: \(right)")
+        return left.title == right.title
             && left.body == right.body
             && left.tag == right.tag
-            && left.color == right.color
+            && left.color.isEqual(right.color)
     }
 }
