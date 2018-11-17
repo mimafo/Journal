@@ -12,6 +12,7 @@ class CreateEntryViewController: UIViewController {
     
     //Constants
     let AddTagText = "Add a Tag"
+    let DefaultBodyText = "Enter body text here..."
     
     //Outlets
     @IBOutlet weak var titleTextField: UITextField!
@@ -31,12 +32,13 @@ class CreateEntryViewController: UIViewController {
         
         registerForKeyboardNotifications()
         if let entry = entry {
-            print("\(entry)")
+            title = "Edit Entry"
+            bindData(entry)
         } else {
-            print("Entry is empty")
+            title = "Add Entry"
+            bodyTextView.text = DefaultBodyText
+            colorViews[0].toggle()
         }
-        
-        colorViews[0].toggle()
         colorViews.forEach { $0.delegate = self}
     }
     
@@ -58,12 +60,11 @@ class CreateEntryViewController: UIViewController {
             tag = addTag.titleLabel?.text
         }
         
-        EntryController.shared.CreateEntry(withTitle: title, body: body, tag: tag, color: .red)
+        EntryController.shared.CreateEntry(withTitle: title, body: body, tag: tag, color: color)
         
         //Reinitialize the elements on the screen
-        titleTextField.text = ""
-        bodyTextView.text = ""
-        addTag.setTitle(AddTagText, for: .normal)
+        let entry = Entry(title: "", body: DefaultBodyText, tag: EntryController.untagged, color: color)
+        bindData(entry)
         
         //Resign the responders and pop this ViewController
         resignResponders()
@@ -75,6 +76,18 @@ class CreateEntryViewController: UIViewController {
     private func resignResponders() {
         titleTextField.resignFirstResponder()
         bodyTextView.resignFirstResponder()
+    }
+    
+    private func bindData(_ entry: Entry) {
+        titleTextField.text = entry.title
+        bodyTextView.text = entry.body
+        let colorValue = CustomColors.getColorValue(color: entry.color).rawValue
+        colorViews[colorValue].toggle()
+        if entry.tag == EntryController.untagged {
+            addTag.setTitle(AddTagText, for: .normal)
+        } else {
+            addTag.setTitle(entry.tag, for: .normal)
+        }
     }
 }
 
