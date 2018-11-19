@@ -116,8 +116,6 @@ class CreateEntryViewController: UIViewController {
         }
         
         bindData(entry!)
-        let index = CustomColors.getColorValue(color: entry!.color).rawValue
-        colorViews[index].toggle()
 
     }
     
@@ -130,6 +128,10 @@ class CreateEntryViewController: UIViewController {
         } else {
             addTag.setTitle(entry.tag, for: .normal)
         }
+        
+        //Select the color view
+        let index = CustomColors.getColorValue(color: entry.color).rawValue
+        colorViews[index - 1].toggle()
     }
 }
 
