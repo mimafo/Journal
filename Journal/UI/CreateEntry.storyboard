@@ -168,15 +168,16 @@
                         <viewLayoutGuide key="safeArea" id="MrG-JO-Qe3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create an Entry" id="msb-kN-l6f">
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="oUm-DJ-q02">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="n7i-2q-Vvz">
                             <connections>
-                                <action selector="exitPressed:" destination="6D6-xP-K5N" id="tok-Fp-ydJ"/>
+                                <action selector="deleteEntry:" destination="6D6-xP-K5N" id="7XW-4S-CDl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addTag" destination="ea7-NT-OoB" id="OHK-Ps-4LI"/>
                         <outlet property="bodyTextView" destination="Boa-Ni-ql4" id="h95-TE-oPK"/>
+                        <outlet property="deleteButton" destination="n7i-2q-Vvz" id="0Ir-gG-wJT"/>
                         <outlet property="scrollView" destination="xBZ-sp-Yjn" id="9hQ-aK-zHw"/>
                         <outlet property="titleTextField" destination="x9r-b2-oiA" id="353-4j-hyD"/>
                         <outletCollection property="colorViews" destination="lay-5s-T6y" collectionClass="NSMutableArray" id="1A0-5k-ozE"/>
