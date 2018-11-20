@@ -17,6 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="meS-iU-wXb" userLabel="FadeMessageView">
+                                <rect key="frame" x="20" y="100" width="374" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fade Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwB-l8-g31">
+                                        <rect key="frame" x="8" y="8" width="358" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0115877093" green="0.16880992980000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-sp-Yjn">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <subviews>
@@ -36,59 +50,59 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a body..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Boa-Ni-ql4">
-                                                        <rect key="frame" x="0.0" y="25" width="390" height="448"/>
+                                                        <rect key="frame" x="0.0" y="25" width="390" height="321"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GYn-aV-3iD" userLabel="H - Stack View">
-                                                        <rect key="frame" x="0.0" y="478" width="390" height="56"/>
+                                                        <rect key="frame" x="0.0" y="351" width="390" height="183"/>
                                                         <subviews>
                                                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lay-5s-T6y" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="3" width="55.666666666666664" height="50"/>
+                                                                <rect key="frame" x="0.0" y="66.666666666666686" width="55.666666666666664" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="yCa-Kp-IjI"/>
                                                                 </constraints>
                                                             </view>
                                                             <view alpha="0.55000000000000004" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-jL-YnH" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="55.666666666666671" y="3" width="55.666666666666671" height="50"/>
+                                                                <rect key="frame" x="55.666666666666671" y="66.666666666666686" width="55.666666666666671" height="50"/>
                                                                 <color key="backgroundColor" red="0.15674037399999999" green="0.52409561819999995" blue="0.004073423546" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="6UA-aV-vFu"/>
                                                                 </constraints>
                                                             </view>
                                                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxe-PI-zbg" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="111.33333333333333" y="3" width="55.666666666666671" height="50"/>
+                                                                <rect key="frame" x="111.33333333333333" y="66.666666666666686" width="55.666666666666671" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Hox-5s-7JR"/>
                                                                 </constraints>
                                                             </view>
                                                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8B-XI-hOj" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="167" y="3" width="56" height="50"/>
+                                                                <rect key="frame" x="167" y="66.666666666666686" width="56" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="U8x-W0-SEa"/>
                                                                 </constraints>
                                                             </view>
                                                             <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBo-7s-22o" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="223" y="3" width="55.666666666666686" height="50"/>
+                                                                <rect key="frame" x="223" y="66.666666666666686" width="55.666666666666686" height="50"/>
                                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="SQA-eC-h85"/>
                                                                 </constraints>
                                                             </view>
                                                             <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-Op-HoM" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="278.66666666666669" y="3" width="55.666666666666686" height="50"/>
+                                                                <rect key="frame" x="278.66666666666669" y="66.666666666666686" width="55.666666666666686" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="C9T-Ci-pmQ"/>
                                                                 </constraints>
                                                             </view>
                                                             <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-3H-D5u" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                                <rect key="frame" x="334.33333333333331" y="3" width="55.666666666666686" height="50"/>
+                                                                <rect key="frame" x="334.33333333333331" y="66.666666666666686" width="55.666666666666686" height="50"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="ggI-yB-qxJ"/>
@@ -178,6 +192,8 @@
                         <outlet property="addTag" destination="ea7-NT-OoB" id="OHK-Ps-4LI"/>
                         <outlet property="bodyTextView" destination="Boa-Ni-ql4" id="h95-TE-oPK"/>
                         <outlet property="deleteButton" destination="n7i-2q-Vvz" id="0Ir-gG-wJT"/>
+                        <outlet property="fadeMessage" destination="MwB-l8-g31" id="Zpp-Wx-OAL"/>
+                        <outlet property="fadeView" destination="meS-iU-wXb" id="8eh-K4-gh2"/>
                         <outlet property="scrollView" destination="xBZ-sp-Yjn" id="9hQ-aK-zHw"/>
                         <outlet property="titleTextField" destination="x9r-b2-oiA" id="353-4j-hyD"/>
                         <outletCollection property="colorViews" destination="lay-5s-T6y" collectionClass="NSMutableArray" id="1A0-5k-ozE"/>

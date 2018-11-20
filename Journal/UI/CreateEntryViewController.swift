@@ -28,6 +28,8 @@ class CreateEntryViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var colorViews: [ColorView]!
     @IBOutlet weak var deleteButton: UIBarButtonItem!
+    @IBOutlet weak var fadeMessage: UILabel!
+    @IBOutlet weak var fadeView: UIView!
     
     //Properties
     var entry: Entry?
@@ -63,6 +65,9 @@ class CreateEntryViewController: UIViewController {
             if let entry = entry {
                 displayConfirmation("Delete", message: "Do you want to delete this entry?", accepted: { () -> Void in
                     EntryController.shared.deleteEntry(entry)
+                    
+                    self.fadeOutMessage("Entry Deleted!")
+                    
                     self.entry = nil
                     self.configEntry()
                 })
@@ -88,6 +93,8 @@ class CreateEntryViewController: UIViewController {
         } else {
             EntryController.shared.CreateEntry(withTitle: title, body: body, tag: tag, color: color)
         }
+        
+        fadeOutMessage("Entry saved!")
         
         //Resign the responders
         resignResponders()
@@ -217,4 +224,26 @@ extension CreateEntryViewController: UITextViewDelegate {
         textView.textColor = .lightGray
     }
     
+}
+
+extension CreateEntryViewController {
+    func fadeOutMessage(_ message: String) {
+        
+        //Initialize fadeView and fadeMessage
+        fadeMessage.text = message
+        fadeView.isHidden = false
+        fadeView.alpha = 1.0
+        fadeView.layer.zPosition = 5.0
+        
+        //Animate the fade out message
+        UIView.animate(withDuration: 2.0, delay: 0.5, animations: {
+            //Fade out
+            self.fadeView.alpha = 0.0
+            self.view.layoutIfNeeded()
+        }) { (_) in
+            //Reset to hidden and default z-index
+            self.fadeView.isHidden = true
+            self.fadeView.layer.zPosition = 0.0
+        }
+    }
 }
