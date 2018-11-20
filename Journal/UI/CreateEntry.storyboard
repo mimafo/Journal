@@ -109,18 +109,6 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="6E3-Op-HoM" firstAttribute="width" secondItem="Uza-jL-YnH" secondAttribute="width" id="0bC-ZS-jxl"/>
-                                                            <constraint firstItem="wxe-PI-zbg" firstAttribute="width" secondItem="Uza-jL-YnH" secondAttribute="width" id="3Fv-Rq-zkx"/>
-                                                            <constraint firstItem="FBo-7s-22o" firstAttribute="height" secondItem="Uza-jL-YnH" secondAttribute="height" id="87x-ey-2nY"/>
-                                                            <constraint firstItem="FBo-7s-22o" firstAttribute="width" secondItem="Uza-jL-YnH" secondAttribute="width" id="9Sq-pF-TOH"/>
-                                                            <constraint firstItem="ffY-3H-D5u" firstAttribute="height" secondItem="Uza-jL-YnH" secondAttribute="height" id="HDZ-7M-tZ8"/>
-                                                            <constraint firstItem="k8B-XI-hOj" firstAttribute="height" secondItem="Uza-jL-YnH" secondAttribute="height" id="Iay-61-lpU"/>
-                                                            <constraint firstItem="k8B-XI-hOj" firstAttribute="width" secondItem="Uza-jL-YnH" secondAttribute="width" id="QFB-yY-fvr"/>
-                                                            <constraint firstItem="ffY-3H-D5u" firstAttribute="width" secondItem="Uza-jL-YnH" secondAttribute="width" id="Upk-9s-4LZ"/>
-                                                            <constraint firstItem="6E3-Op-HoM" firstAttribute="height" secondItem="Uza-jL-YnH" secondAttribute="height" id="Zby-xQ-PTV"/>
-                                                            <constraint firstItem="wxe-PI-zbg" firstAttribute="height" secondItem="Uza-jL-YnH" secondAttribute="height" id="dCl-xM-eNh"/>
-                                                        </constraints>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea7-NT-OoB">
                                                         <rect key="frame" x="160.66666666666666" y="539" width="69" height="44"/>

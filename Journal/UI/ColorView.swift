@@ -30,14 +30,21 @@ class ColorView: UIView {
     
     func CreateView() {
         //Create the view as a circle
-        let radius = max(frame.width, frame.height) / 2
-        layer.cornerRadius = radius
-        clipsToBounds = true
+        //let radius = max(frame.width, frame.height) / 2
+        //layer.cornerRadius = radius
+        //clipsToBounds = true
         backgroundColor = setupBackground()
         
         //Create the selected parts
-        isSelectedView.frame = CGRect(x: 10.0, y: 10.0, width: frame.width - 20.0, height: frame.height - 20.0)
+        //isSelectedView.frame = CGRect(x: 10.0, y: 10.0, width: frame.width - 20.0, height: frame.height - 20.0)
+        //let selectedRadius = max(isSelectedView.frame.width, isSelectedView.frame.height) / 2.0
+        
+        let innerX = frame.width / 5.0
+        let innerY = frame.height / 5.0
+        
+        isSelectedView.frame = CGRect(x: innerX, y: innerY, width: frame.width - (2*innerX), height: frame.height - (3.30*innerY))
         let selectedRadius = max(isSelectedView.frame.width, isSelectedView.frame.height) / 2.0
+        
         isSelectedView.layer.cornerRadius = selectedRadius
         isSelectedView.clipsToBounds = true
         isSelectedView.backgroundColor = .black
